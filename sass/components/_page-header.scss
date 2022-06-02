@@ -81,7 +81,12 @@
     fill: currentColor;
 }
 }
-.current::after {
+.current {
+    position: relative;
+    color: $text-color-hover;
+
+
+&::after {
     position: absolute;
     display: block;
     content: "";
@@ -94,4 +99,5 @@
     border-radius: 2px;
 
     background-color: $text-color-hover;
+}
 }

@@ -63,11 +63,6 @@ body {
   overflow: hidden;
 }
 
-.current {
-  position: relative;
-  color: #2196F3;
-}
-
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
@@ -158,6 +153,11 @@ body {
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.current {
+  position: relative;
+  color: #2196F3;
 }
 
 .current::after {
@@ -802,19 +802,22 @@ body {
   margin-bottom: 9px;
 }
 
-.address__link {
+.address .addres__link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.address__link:hover, .address__link:focus {
-  color: #2196F3;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link--map {
+.address .addres__link-map {
   color: #FFFFFF;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: #2196F3;
 }
 
 .social-footer__title {
@@ -982,28 +985,6 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card {
-  border: 1px solid #EEEEEE;
-  border-top: none;
-  padding: 20px 24px;
-}
-
-.card .card__title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--text-color-h);
-}
-
-.card .card__group {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--text-color-primary);
-}
-
 .portfolio-galery__thumb {
   position: relative;
   overflow: hidden;
@@ -1017,7 +998,7 @@ body {
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;
-  color: var(--theme-color-light);
+  color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   width: 100%;
@@ -1033,5 +1014,27 @@ body {
 .portfolio-galery__link:focus .portfolio-galery__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.card {
+  border: 1px solid #EEEEEE;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.card__group {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

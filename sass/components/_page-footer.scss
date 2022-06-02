@@ -44,25 +44,24 @@
     margin-bottom: 9px;
 }
 
-&__link {
+.addres__link {
     line-height: 1.71;
 
     color: $contact-color-footer;
-
-
-    &:hover,
-        &:focus {
-            color: $text-color-hover;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__link--map {
+.addres__link-map {
     color: $theme-color-light;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
+& .link:hover,
+& .link:focus {
+    color: $text-color-hover;
 
+}
 }
 
 .social-footer__title {

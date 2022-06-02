@@ -43,7 +43,7 @@
 
     padding: 63px 24px;
 
-    color: var(--theme-color-light);
+    color: $theme-color-light;
     background-color: rgba(33, 150, 243, 0.9);
     height: 100%;
     width: 100%;
@@ -74,7 +74,7 @@
         line-height: 2;
         letter-spacing: 0.06em;
 
-        color: var(--text-color-h);
+        color: $text-color-h;
     }
 
     &__group {
@@ -83,6 +83,6 @@
         font-size: 16px;
         line-height: 1.88;
 
-        color: var(--text-color-primary);
+        color: $text-color-primary;
     }
 }
